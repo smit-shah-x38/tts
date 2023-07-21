@@ -31,7 +31,7 @@ def respond():
     speech = model.generate_speech(
         inputs["input_ids"], speaker_embeddings, vocoder=vocoder)
 
-    sf.write("speech3.wav", speech.numpy(), samplerate=16000)
+    sf.write("speech4.wav", speech.numpy(), samplerate=16000)
 
     return jsonify({"success": True})
 
